@@ -5,7 +5,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object LogSparkKafka {
   def main(args: Array[String]) {
-    val logFile = "../uservisits" // Should be some file on your system
+    val logFile = "src/main/resources/uservisits" // Should be some file on your system
     val spark = SparkSession
         .builder()
         .appName("LogSparkKafka")
