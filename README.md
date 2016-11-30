@@ -103,10 +103,12 @@ with a help of commands listed in script (src\main\resources\script).
 
 ## Running jobs
 
-First run LogSparkKafka (src\main\scala\LogSparkKafka.scala)
+First run KafkaSparkCassandra (src\main\scala\KafkaSparkCasandra.scala).
+It will listen to Kafka and recieve data in json format and save to
+created Cassandra table.
+
+Then run LogSparkKafka (src\main\scala\LogSparkKafka.scala)
 job. It will read data from the log file and send to Kafka as json
 string.
 
-Then run KafkaSparkCassandra (src\main\scala\KafkaSparkCasandra.scala).
-It will get data in json format from Kafka and save to created
-Cassandra table.
+
