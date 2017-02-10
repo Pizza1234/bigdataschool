@@ -47,11 +47,11 @@ and
     
 To start Kafka in Windows, goto Kafka Home and run:
 
-    > bin\windows\zookeeper-server-start.sh config\zookeeper.properties
+    > bin\windows\zookeeper-server-start.bat config\zookeeper.properties
     
 and 
 
-    > bin\windows\kafka-server-start.sh config\server.properties
+    > bin\windows\kafka-server-start.bat config\server.properties
 
 ## Creating a topic in Kafka
 
@@ -59,7 +59,7 @@ Before running jobs topic in Cassandra should be created.
 
 It can be done with a windows command:
 
-    > bin\windows\kafka-topics.sh --create --zookeeper localhost:2181
+    > bin\windows\kafka-topics.bat --create --zookeeper localhost:2181
      --replication-factor 1 --partitions 1 --topic test
 
 In Linux:
